@@ -1,0 +1,12 @@
+.app {
+  background-color: #000000;
+  text-align: center;
+  color: white;
+  padding: 10vh;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.header {
+  font-size: 8vh;
+}

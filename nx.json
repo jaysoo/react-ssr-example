@@ -1,0 +1,29 @@
+{
+  "npmScope": "react-ssr-example",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "browser": {
+      "tags": ["type:app", "platform:web"]
+    },
+    "browser-e2e": {
+      "tags": ["type:app"],
+      "implicitDependencies": ["browser"]
+    },
+    "server": {
+      "tags": ["type:app", "platform:node"],
+      "implicitDependencies": ["browser"]
+    },
+    "ui": {
+      "tags": ["type:ui", "platform:web"]
+    }
+  }
+}
