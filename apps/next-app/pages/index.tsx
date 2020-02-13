@@ -1,4 +1,5 @@
 import React from 'react';
+import { PageHeading, Text } from '@react-ssr-example/ui';
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import styled, { createGlobalStyle } from 'styled-components';
 
@@ -29,7 +30,11 @@ export const Index = () => {
   return (
     <StyledApp>
       <GlobalStyle />
-      <Logo width={500} />
+      <Logo width="500" />
+      <PageHeading>Hello World!</PageHeading>
+      <Text size="large">
+        This is a demo app that uses React + express to do SSR.
+      </Text>
     </StyledApp>
   );
 };

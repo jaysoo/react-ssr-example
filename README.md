@@ -1,8 +1,11 @@
 # React + Nx SSR Example
 
-This workspace contains a React webapp and Express server app. The React app is rendering on the server then rehydrated in the browser.
+This workspace contains a couple of webapps that provides SSR and styled-components:
 
-To run the example, clone and install dependencies.
+1. Plain React + express app
+2. Next.js app
+
+To get started, clone the repo and install dependencies.
 
 ```
 git clone https://github.com/jaysoo/react-ssr-example.git react-ssr-example
@@ -10,18 +13,20 @@ cd react-ssr-example
 yarn install
 ```
 
+## Plain React + express server
+
 Then run the dev server:
 
 ```
-yarn start
+yarn nx run server:serve-all
 ```
 
-## Build for production
+### Build for production
 
 Run the prod build script:
 
 ```
-yarn build
+yarn nx run server:build-all
 ```
 
 Which will generate a compiled server module:
@@ -30,9 +35,18 @@ Which will generate a compiled server module:
 node dist/apps/server/main.js
 ```
 
-## Testing and Linting
+## Next.js
+
+To run the dev server:
 
 ```
-yarn test
-yarn lint
+yarn nx run next-app:serve
 ```
+
+To generate a static site:
+
+```
+yarn nx run next-app:export
+```
+
+Then the static site will be at `dist/apps/next-app/exported`.
