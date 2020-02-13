@@ -32,12 +32,13 @@ router.use('*', function(req, res) {
       return res.status(404).end();
     }
 
-    const { html, helmet } = main.render();
+    const { html, helmet, style } = main.render();
 
     return res.send(
       htmlData
         .replace('<div id="root"></div>', `<div id="root">${html}</div>`)
         .replace('<title></title>', helmet.title.toString())
+        .replace('</head>', `${style}</head>`)
     );
   });
 });

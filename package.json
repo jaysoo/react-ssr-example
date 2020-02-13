@@ -33,13 +33,15 @@
     "express": "^4.17.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "react-helmet-async": "^1.0.4"
+    "react-helmet-async": "^1.0.4",
+    "styled-components": "^5.0.1"
   },
   "devDependencies": {
     "@babel/preset-react": "7.8.3",
     "@nrwl/cypress": "8.12.0",
     "@nrwl/eslint-plugin-nx": "8.12.0",
     "@nrwl/jest": "8.12.0",
+    "@nrwl/next": "8.12",
     "@nrwl/node": "8.12.0",
     "@nrwl/react": "8.12.0",
     "@nrwl/web": "8.12.0",
@@ -51,6 +53,7 @@
     "@types/react-dom": "16.9.4",
     "@typescript-eslint/eslint-plugin": "2.3.2",
     "@typescript-eslint/parser": "2.3.2",
+    "babel-plugin-styled-components": "^1.10.7",
     "cypress": "^3.8.2",
     "dotenv": "6.2.0",
     "eslint": "6.1.0",
