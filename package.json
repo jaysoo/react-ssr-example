@@ -34,7 +34,12 @@
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-helmet-async": "^1.0.4",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "next": "9.1.5",
+    "@zeit/next-css": "1.0.1",
+    "@zeit/next-sass": "1.0.1",
+    "@zeit/next-less": "1.0.1",
+    "@zeit/next-stylus": "1.0.1"
   },
   "devDependencies": {
     "@babel/preset-react": "7.8.3",
@@ -68,6 +73,7 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.5.3",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "@types/styled-components": "4.4.2"
   }
 }
